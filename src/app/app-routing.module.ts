@@ -2,10 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { LaudoComponent } from './laudo/laudo.component';
+import { AjudaComponent } from './ajuda/ajuda.component';
+
 
 const routes: Routes = [
+
   {path: 'dashboard',component: DashboardComponent},
   {path: 'consulta',component: ConsultaComponent},
+  {path: 'laudo',component: LaudoComponent},
+  {path: 'ajuda',component: AjudaComponent},
 
 ];
 

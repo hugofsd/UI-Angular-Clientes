@@ -30,8 +30,19 @@ this.items = [
     routerLink: ['/consulta']
    },
 
-  {label: 'Laudos Cautelares', icon: 'pi pi-fw pi-pencil'},
-  {label: 'Ajuda', icon: 'pi pi-fw pi-question'}, 
+  {
+    label: 'Laudos Cautelares',
+    icon: 'pi pi-fw pi-pencil',
+    routerLink: ['/laudo']
+    },
+
+
+
+  {
+  label: 'Ajuda',
+  icon: 'pi pi-fw pi-question',
+  routerLink: ['/ajuda']
+  }, 
 
 ];
 

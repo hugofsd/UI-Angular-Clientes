@@ -17,13 +17,18 @@ import {InputNumberModule} from 'primeng/inputnumber';
 import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
 import {ButtonModule} from 'primeng/button';
+import { LaudoComponent } from './laudo/laudo.component';
+import { AjudaComponent } from './ajuda/ajuda.component';
+import {AccordionModule} from 'primeng/accordion';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DashboardComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    LaudoComponent,
+    AjudaComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import {ButtonModule} from 'primeng/button';
     InputNumberModule,
     InputTextModule,
     CalendarModule,
-    ButtonModule
+    ButtonModule,
+    AccordionModule
     
     
 

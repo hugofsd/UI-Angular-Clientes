@@ -1,18 +1,18 @@
+
 <div class="p-grid">
     <div class="p-col-12">
         <p-card>
-            <h3>Seu histórico de pesquisas:</h3>
+             <h3>Seu histórico de Laudos:</h3>
             <div class="p-grid p-formgrid p-fluid p-formgroup-inline">
                 <div class="p-col-12 p-lg-1 p-field">
-                    <H4>Código</H4>
-                    <p-inputNumber placeholder="000.000" inputId="minmax" inputId="minmax" mode="decimal" [min]="0"
-                        [max]="100">
+                    <H4>Nº Laudo</H4>
+                    <p-inputNumber placeholder="000.000"  inputId="minmax" inputId="minmax" mode="decimal" [min]="0" [max]="100">
                     </p-inputNumber>
                 </div>
 
-                <div class="p-col-12 p-lg-1 p-field">
+                <div class="p-col-12 p-lg-2 p-field">
                     <H4>Placa</H4>
-                    <input type="text" placeholder="ABC-1234" pInputText>
+                    <input type="text" placeholder="AAA-1234" pInputText>
                 </div>
 
                 <div class="p-col-12 p-lg-2 p-field">
@@ -22,26 +22,27 @@
 
                 <div class="p-col-12 p-lg-2 p-field">
                     <H4>Motor</H4>
+                    <input type="text" pInputText>
+                </div>
+
+                <div class="p-col-12 p-lg-2 p-field">
+                    <H4>Câmbio</H4>
                     <input type="text"  pInputText>
                 </div>
 
-                <div class="p-col-12 p-lg-3 p-field">
+                <div class="p-col-12 p-lg-2 p-field">
                     <H4>Data</H4>
                     <p-calendar formControlName="date" placeholder="00/00/0000" [showIcon]="true" inputId="icon"></p-calendar>
                 </div>
 
+                <br>
                 <div class="p-col-12 p-lg-3 p-field">
                     <button pButton pRipple type="button" label="Pesquisar" class="p-button-outlined"></button>
                 </div>
-
-                <br>
-
-            </div>
+            </div> 
         </p-card>
-
     </div>
 </div>
-
 
 <p-table [value]="dados">
     <ng-template pTemplate="caption">
@@ -49,9 +50,9 @@
     </ng-template>
     <ng-template pTemplate="header">
         <tr>
-            <th style="width: 6rem">#</th>
+            <th style="width: 6rem">Nº</th>
             <th>Placa</th>
-            <th>Produto</th>
+            <th>Modelo</th>
             <th>Data</th>
             <th>Status</th>
             <th>Ações</th>
@@ -59,11 +60,11 @@
     </ng-template>
     <ng-template pTemplate="body" *ngFor="let d of dados">
         <tr>
-            <td>{{d.id1}}</td>
-            <td>{{d.placa1}}</td>
-            <td>{{d.produto1}}</td>
-            <td>{{d.data1}}</td>
-            <td>{{d.status1}}</td>
+            <td>{{d.id}}</td>
+            <td>{{d.placa}}</td>
+            <td>{{d.modelo}}</td>
+            <td>{{d.data}}</td>
+            <td>{{d.status}}</td>
             <td><button pButton pRipple type="button" icon="pi pi-fw pi-search" class="p-button-rounded
                             p-button-outlined"></button></td>
         </tr>
