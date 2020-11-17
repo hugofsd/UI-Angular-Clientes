@@ -20,6 +20,7 @@ import {ButtonModule} from 'primeng/button';
 import { LaudoComponent } from './laudo/laudo.component';
 import { AjudaComponent } from './ajuda/ajuda.component';
 import {AccordionModule} from 'primeng/accordion';
+import { FaturaComponent } from './fatura/fatura.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {AccordionModule} from 'primeng/accordion';
     DashboardComponent,
     ConsultaComponent,
     LaudoComponent,
-    AjudaComponent
+    AjudaComponent,
+    FaturaComponent
   ],
   imports: [
     BrowserModule,

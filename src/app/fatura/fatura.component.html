@@ -1,0 +1,57 @@
+<p-card>
+    <p-table [value]="dados">
+        <ng-template pTemplate="caption">
+            Minhas Faturas:
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th>#</th>
+                <th>Geração</th>
+                <th>Vencimento</th>
+                <th>Valor Total</th>
+                <th>Status</th>
+                <th>Desquição</th>
+                <th></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" *ngFor="let d of dados" >
+            <tr>
+                <td>{{d.id1}}</td>
+                <td>{{d.geracao1}}</td>
+                <td>{{d.vencimento1}}</td>
+                <td>{{d.valor1}}</td>
+                <td>{{d.status1}}</td>
+                <td>{{d.descricao}}</td>
+                <td><p-button label="Imprimir"></p-button></td>
+            </tr>
+            <tr>
+                <td>{{d.id2}}</td>
+                <td>{{d.geracao2}}</td>
+                <td>{{d.vencimento2}}</td>
+                <td>{{d.valor3}}</td>
+                <td>{{d.status1}}</td>
+                <td>{{d.descricao}}</td>
+                <td><p-button label="Imprimir"></p-button></td>
+            </tr>
+            <tr>
+                <td>{{d.id4}}</td>
+                <td>{{d.geracao4}}</td>
+                <td>{{d.vencimento4}}</td>
+                <td>{{d.valor4}}</td>
+                <td>{{d.status2}}</td>
+                <td>{{d.descricao}}</td>
+                <td><p-button label="Imprimir"></p-button></td>
+            </tr>
+            <tr>
+                <td>{{d.id5}}</td>
+                <td>{{d.geracao5}}</td>
+                <td>{{d.vencimento5}}</td>
+                <td>{{d.valor5}}</td>
+                <td>{{d.status1}}</td>
+                <td>{{d.descricao}}</td>
+                <td><p-button label="Imprimir"></p-button></td>
+            </tr>
+        </ng-template>
+    </p-table>
+    
+</p-card>

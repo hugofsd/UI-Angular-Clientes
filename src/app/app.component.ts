@@ -9,12 +9,16 @@ import {MenuItem} from 'primeng/api';
 export class AppComponent {
   title = 'dashboard';
   items: MenuItem[];
+ 
 
   constructor() { }
   
   ngOnInit() {
     this.servicos(); 
 }
+
+
+
 
 servicos(){
 this.items = [
@@ -37,15 +41,26 @@ this.items = [
     },
 
 
+  {
+      label: 'Contas',
+      icon: 'pi pi-dollar',
+      routerLink: ['/fatura']
+  }, 
 
   {
   label: 'Ajuda',
   icon: 'pi pi-fw pi-question',
   routerLink: ['/ajuda']
-  }, 
+  }
+
+  
+
 
 ];
 
 }
+
+
+
 }
 

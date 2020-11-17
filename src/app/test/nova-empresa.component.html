@@ -1,0 +1,137 @@
+<h1>Nova empresa</h1>
+
+
+
+<p-button (click)="showBasicDialog()" 
+icon="pi pi-external-link" label="Nova pesquisa"></p-button>
+
+
+
+
+
+
+
+<p-dialog [baseZIndex]="10000" [style]="{width: '700px', minWidth: '500px'}"
+ [(visible)]="displayBasic"> 
+
+ <p-tabView>
+    <div class="p-grid p-fluid">
+  
+        <div class="p-col-12">
+          <span>
+            <label>CNPJ: </label>
+            <p-inputMask  mask="99.999.999/9999-99"required>
+            </p-inputMask>
+          </span>
+        </div>
+        <div class="p-col-5">
+          <span>
+            <label>Área de atuação:</label>
+            <input type="text"  pInputText/>
+          </span>
+        </div>
+  
+        <div class="p-col-7">
+          <span>
+            <label>Inscrição Estadual:</label>
+            <input type="text"  pInputText/>
+          </span>
+        </div>
+  
+        <div class="p-field p-col-12">
+          <span>
+            <label>CEP:</label>
+            <input type="text" pInputText> 
+          </span>
+        </div>
+  
+        <div class="p-field p-col-12">
+          <span>
+            <label>Endereço:</label>
+            <input type="text" pInputText/>
+          </span>
+        </div>
+  
+        <div class="p-col-2">
+          <span>
+            <label>N:</label>
+            <input type="text"  pInputText/>
+          </span>
+        </div>
+  
+        <div class="p-col-10">
+          <span>
+            <label>Complemento (opcional) :</label>
+            <input type="text"  pInputText/>
+          </span>
+        </div>
+  
+        <div class="p-col-5">
+          <span>
+            <label>Cidade:</label>
+            <input type="text"  pInputText/>
+          </span>
+        </div>
+  
+  
+        <div class="p-col-5">
+          <span>
+            <label>Bairro:</label>
+            <input type="text"  pInputText/>
+          </span>
+        </div>
+  
+        <div class="p-col-2">
+          <span>
+            <label>Estado:</label>
+            <p-dropdown  optionLabel="estado"
+             [showClear]="true" name="estado" >
+          </p-dropdown>
+          </span>
+        </div>
+  
+        <div class="p-col-2">
+          <span>
+            <label>DDD:</label>
+            <p-inputNumber mode="decimal"  [useGrouping]="false">
+            </p-inputNumber>
+          </span>
+        </div>
+
+        <div class="p-col-4">
+          <span>
+            <label>Telefone:</label>
+            <p-inputNumber mode="decimal"  [useGrouping]="false">          
+            </p-inputNumber>
+          </span>
+        </div>
+
+        <div class="p-col-2">
+          <span>
+            <label>DDD:</label>
+            <p-inputNumber mode="decimal"  [useGrouping]="false">
+            </p-inputNumber>
+          </span>
+        </div>
+
+        <div class="p-col-4">
+          <span>
+            
+            <label>Celular:</label>
+            <p-inputNumber mode="decimal"  [useGrouping]="false" mask="(99) 9999-9999?9">
+            </p-inputNumber>
+          </span>
+        </div>
+  
+      </div>
+ </p-tabView>
+
+ <p-footer>
+  <button pButton type="button" class="p-button-success p-button-raised" icon="pi pi-save" label="Salvar"
+   style="margin-right: 1em"></button>
+
+  <button pButton type="button" class="p-button-secondary p-button-raised" icon="pi pi-times" label="Cancelar"
+    style="margin-right: 1em" ></button>
+</p-footer>
+
+</p-dialog>  
